@@ -1,3 +1,5 @@
+package CF_800;
+
 import java.util.Scanner;
 
 public class Cover_in_Water {

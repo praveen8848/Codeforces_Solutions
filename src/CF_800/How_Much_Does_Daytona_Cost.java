@@ -1,3 +1,5 @@
+package CF_800;
+
 import java.util.Scanner;
 
 public class How_Much_Does_Daytona_Cost {
