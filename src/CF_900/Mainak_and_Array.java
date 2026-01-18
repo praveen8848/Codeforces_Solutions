@@ -1,5 +1,5 @@
 
-
+package CF_900;
 import java.util.Scanner;
 
 public class Mainak_and_Array {
