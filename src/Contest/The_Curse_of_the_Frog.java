@@ -1,4 +1,4 @@
-
+package Contest;
 
 import java.util.Scanner;
 
