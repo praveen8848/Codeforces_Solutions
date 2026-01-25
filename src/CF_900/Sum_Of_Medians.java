@@ -1,4 +1,4 @@
-
+package CF_900;
 
 import java.util.Scanner;
 
