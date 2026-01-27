@@ -1,4 +1,4 @@
-
+package CF_800;
 
 import java.util.Scanner;
 
