@@ -26,7 +26,8 @@ public class Olya_and_Game_with_Arrays {
                         sMin = fMin;
                         fMin = temp;
                     }
-                    else if ( temp < sMin) {
+                    else if (
+                            temp < sMin) {
                         sMin = temp;
                     }
                     globalMin = Math.min(globalMin, temp);
