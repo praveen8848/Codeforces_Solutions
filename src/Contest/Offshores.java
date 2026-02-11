@@ -40,5 +40,6 @@ public class Offshores {
             }
 
             System.out.println(maxMoney);
+        }
     }
 }
