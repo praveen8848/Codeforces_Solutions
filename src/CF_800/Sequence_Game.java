@@ -24,9 +24,8 @@ public class Sequence_Game {
                     a.add(b[i]);
                 }
                 else{
-
-                        a.add(1L);
-                        a.add(b[i]);
+                    a.add(1L);
+                    a.add(b[i]);
 
                 }
             }
