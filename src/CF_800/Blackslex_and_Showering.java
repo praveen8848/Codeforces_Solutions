@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class Blackslex_and_Showering {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+
+        while (t-- > 0) {
+            int n = sc.nextInt();
+            int[] a = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                a[i] = sc.nextInt();
+            }
+
+            long totalTime = 0;
+            for (int i = 0; i < n - 1; i++) {
+                totalTime += Math.abs(a[i] - a[i + 1]);
+            }
+
+            long maxDiscount = 0;
+
+            maxDiscount = Math.max(maxDiscount, Math.abs(a[1] - a[0]));
+
+            maxDiscount = Math.max(maxDiscount, Math.abs(a[n - 1] - a[n - 2]));
+
+            for (int i = 1; i < n - 1; i++) {
+                long currentDiscount = Math.abs(a[i] - a[i - 1]) + Math.abs(a[i + 1] - a[i]) - Math.abs(a[i + 1] - a[i - 1]);
+                maxDiscount = Math.max(maxDiscount, currentDiscount);
+            }
+
+            System.out.println(totalTime - maxDiscount);
+        }
+    }
+}
